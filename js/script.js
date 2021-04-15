@@ -21,4 +21,4 @@ let slider = (sliderSel,images) => {
     }
     toggleSlide(i,images)
 }
-slider('.full-block-slider', ['../images/main-slider/slider1.jpg','../images/main-slider/slider2.jpg']);
+slider('.full-block-slider', ['images/main-slider/slider1.jpg','images/main-slider/slider2.jpg']);
