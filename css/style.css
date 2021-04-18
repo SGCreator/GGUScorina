@@ -363,3 +363,72 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
     height: 30px;
   }
 }
+
+.block-history {
+  padding: 200px 0;
+  position: relative;
+}
+
+.block-history-texts {
+  max-width: 550px;
+}
+
+.block-history-texts__title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 34px;
+  color: #000;
+  margin-bottom: 57px;
+}
+
+.block-history-texts__title span {
+  text-transform: uppercase;
+}
+
+.block-history-texts__subtitle {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+}
+
+.block-history-texts__subtitle div {
+  margin-bottom: 27px;
+}
+
+.block-history-texts__subtitle div:last-child {
+  margin: 0;
+}
+
+.block-history-img {
+  position: absolute;
+  max-width: 850px;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+}
+
+.block-history-img img {
+  width: 100%;
+}
+
+@media (max-width: 1500px) {
+  .block-history-img {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .block-history-texts {
+    max-width: 100%;
+  }
+  .block-history-img {
+    position: static;
+    transform: translate(0, 0);
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+  .block-history {
+    padding: 60px 0;
+  }
+}
