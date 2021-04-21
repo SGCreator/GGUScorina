@@ -6,25 +6,23 @@ burger.addEventListener('click', function(){
     menu.classList.toggle('active')
     document.body.classList.toggle('hidden')
 });
-let slider = (sliderSel,images) => {
+const slider = (sliderSel, images) => {
     const slide = document.querySelector(sliderSel)
     let i = 1
-    if(slide){
-        function toggleSlide (n,img) {
-            setInterval(function(){
+    if (slide) {
+        function toggleSlide(n, img) {
+            setInterval(function () {
                 slide.style.background = `url('${img[n]}') no-repeat 0 60px / cover`
                 n++
-                if(n >= img.length){
-                    n = 0
-                }
-            },8000)
+                if (n >= img.length) n = 0
+            }, 8000)
         }
-        toggleSlide(i,images)
+        toggleSlide(i, images)
     } else {
         return false
     }
 }
-slider('.full-block-slider', ['images/main-slider/slider1.jpg','images/main-slider/slider2.jpg']);
+slider('.full-block-slider', ['images/main-slider/slider1.jpg', 'images/main-slider/slider2.jpg']);
 function map(n) {
 	google.maps.Map.prototype.setCenterWithOffset = function (latlng, offsetX, offsetY) {
 		var map = this;
