@@ -104,11 +104,25 @@ body.hidden {
   font-weight: 500;
 }
 
+@media (max-width: 768px) {
+  .title-more {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
 .subtitle-more {
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 0.04em;
   color: #000;
+}
+
+@media (max-width: 768px) {
+  .subtitle-more {
+    font-size: 15px;
+    line-height: 25px;
+  }
 }
 
 .mx635 {
@@ -117,6 +131,10 @@ body.hidden {
 
 .mx963 {
   max-width: 963px;
+}
+
+.center {
+  text-align: center;
 }
 
 /**
@@ -193,19 +211,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 
 .full-block-slider {
   transition: 0.4s ease;
-  background: url("../images/main-slider/slider1.jpg") no-repeat 0 60px/cover;
+  background: #000 url("../images/main-slider/slider1.jpg") no-repeat 0 60px/cover;
 }
 
 .full-block-partner {
-  background: url("../images/parttners/01.jpg") no-repeat 0 60px/cover;
+  background: #000 url("../images/parttners/01.jpg") no-repeat 0 60px/cover;
 }
 
 .full-block-labaratories {
-  background: url("../images/labaratories/01.jpg") no-repeat 0 60px/cover;
+  background: #000 url("../images/labaratories/01.jpg") no-repeat 0 60px/cover;
 }
 
 .full-block-development {
-  background: url("../images/development/01.jpg") no-repeat 0 60px/cover;
+  background: #000 url("../images/development/01.jpg") no-repeat 0 60px/cover;
 }
 
 .full-block__text {
@@ -521,7 +539,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 }
 
 .block-info {
-  background: url("../images/info/info01.jpg") no-repeat center/cover;
+  background: #000 url("../images/info/info01.jpg") no-repeat center/cover;
   padding: 190px 0 168px 0;
 }
 
@@ -1030,6 +1048,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 .block-more-elem__img {
   flex: 0 1 455px;
   margin-right: 10px;
+  margin-bottom: 20px;
 }
 
 .block-more-elem__img img {
@@ -1038,6 +1057,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 
 .block-more-elem__txt {
   flex: 0 1 675px;
+}
+
+.block-more-elem--reverce {
+  flex-direction: row-reverse;
 }
 
 .block-more-img {
@@ -1062,4 +1085,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 
 .block-more-desc__subtitles div:last-child {
   margin: 0;
+}
+
+.block-more-desc__subtitles div span {
+  font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+  .block-more-elem {
+    flex-wrap: wrap;
+  }
+  .block-more-elem__txt {
+    flex: 1 1 auto;
+  }
+  .block-more-desc {
+    margin-bottom: 40px;
+  }
+  .block-more {
+    padding: 100px 0;
+  }
 }
