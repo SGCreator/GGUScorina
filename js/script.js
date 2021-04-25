@@ -23,6 +23,30 @@ const slider = (sliderSel, images) => {
     }
 }
 slider('.full-block-slider', ['images/main-slider/slider1.jpg', 'images/main-slider/slider2.jpg']);
+const anchor = (wh,bc) => {
+    let wrap = document.querySelector('.wrap')
+    wrap.insertAdjacentElement('beforeend', getAnchor())
+    let anchor = document.querySelector('.anchor')
+
+    function getAnchor () {
+        let anchor = document.createElement('div')
+        anchor.classList.add('anchor')
+        anchor.style.width = anchor.style.height =  wh + 'px'
+        anchor.style.backgroundColor = bc
+
+        return anchor
+    }
+    window.addEventListener('scroll', function () {
+        let pos = window.pageYOffset
+        pos > window.innerHeight ? anchor.classList.add('show') : anchor.classList.remove('show') 
+    })
+    anchor.addEventListener('click', () => {
+        window.scrollTo({top:0, behavior:'smooth'})
+    })
+}
+anchor(50,'#333333')
+;
+
 function map(n) {
 	google.maps.Map.prototype.setCenterWithOffset = function (latlng, offsetX, offsetY) {
 		var map = this;
