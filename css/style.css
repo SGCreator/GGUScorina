@@ -67,6 +67,14 @@ body.hidden {
   }
 }
 
+.title-sotr {
+  color: #000;
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  line-height: 28px;
+}
+
 .subtitle {
   font-size: 20px;
   line-height: 30px;
@@ -278,6 +286,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 
 .full-block-development {
   background: #000 url("../images/development/01.jpg") no-repeat 0 60px/cover;
+}
+
+.full-block-sotr {
+  background: url("../images/sotrudniki/bg.jpg") no-repeat 0 60px/cover;
 }
 
 .full-block__text {
@@ -1158,4 +1170,45 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   .block-more {
     padding: 100px 0;
   }
+}
+
+.block-sotr {
+  padding: 100px 0 100px 0;
+}
+
+.block-sotr__title {
+  margin-bottom: 100px;
+}
+
+.block-sotr-body {
+  display: flex;
+  margin: 0 -10px;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.block-sotr-body__column {
+  padding: 0 10px;
+  box-sizing: border-box;
+  flex: 0 1 50%;
+  margin-bottom: 30px;
+}
+
+.block-sotr-body__title {
+  margin-bottom: 10px;
+}
+
+.block-sotr-body__img {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto 30px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.block-sotr-body__img img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
